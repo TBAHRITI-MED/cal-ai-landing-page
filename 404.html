@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="html404page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Not Found</title>
+
+    <!-- custom css link  -->
+
+    <link rel="icon" href="img/Logo.svg" type="image/icon type" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style404.css" />
+
+    <!-- boxicons link  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- remixicons link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body404page">
+    <!-- header  -->
+    <header class="error404page-header">
+      <div class="navlist-logos">
+        <a href="#" class="logo">
+          <img class="logo-dark" src="img/logodark.svg" alt="logo" />
+          <img class="logo-light" src="img/logolight.svg" alt="logo" />
+        </a>
+      </div>
+
+      <ul class="navlist-item">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Our services</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+      </ul>
+
+      <div class="right-info">
+        <div class="toggle-container">
+          <input
+            class="switch-dark-light-input"
+            type="checkbox"
+            id="switch"
+            name="theme"
+          />
+          <label class="switch-dark-light-label" for="switch">Toggle</label>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+
+    <!-- 404 content  -->
+
+    <section class="content-404">
+      <img class="img404-light" src="img/404-error-dark.svg" alt="404" />
+      <img class="img404-dark" src="img/404-error-light.svg" alt="404" />
+      <a href="#" class="GoToHomebtn">Go To Home</a>
+      <a href="#" class="Contactbtn">Contact us</a>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="error404page-footer">
+      <div class="error404page-container-footer">
+        <div class="error404page-footer-social">
+          <img class="logo-dark" src="img/logodark.svg" alt="logo" />
+          <img class="logo-light" src="img/logolight.svg" alt="logo" />
+          <div class="social-icon">
+            <div class="social-icon-i">
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <div class="social-icon-i">
+              <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+            </div>
+            <div class="social-icon-i">
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <div class="social-icon-i">
+              <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="error404page-footer-info">
+          <div class="error404page-footer-info-one">
+            <img class="logo-dark" src="img/logodark.svg" alt="logo" />
+            <img class="logo-light" src="img/logolight.svg" alt="logo" />
+            <p>
+              About pages are perfect spaces to talk <br />
+              about where you started, how you've <br />
+              grown, and the ideals that have helped <br />
+              your organization mature
+            </p>
+          </div>
+
+          <div class="error404page-footer-info-two">
+            <h6>Address</h6>
+            <a href="#"
+              ><i class="bx bxs-map"></i>BP 73, Bureau de poste EL WIAM <br />
+              Sidi Bel Abbés 22016, Algérie</a
+            >
+          </div>
+
+          <div class="error404page-footer-info-three">
+            <h6>Contact</h6>
+            <div>
+              <a href="#"><i class="bx bx-phone"></i>+213-48-74-94-52</a>
+              <a href="#"><i class="bx bx-envelope"></i>contact@esi-sba.dz</a>
+            </div>
+          </div>
+
+          <div class="error404page-footer-info-four">
+            <h6>Office</h6>
+            <p>Sunday - Thursday</p>
+            <p>8AM- 5PM</p>
+          </div>
+        </div>
+
+        <div class="error404page-footer-copyright">
+          <p>
+            © <span class="year"></span>
+            <span class="logo-text">Finanworks</span> - All rights reserved.
+          </p>
+          <div class="error404page-footer-item">
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const header = document.querySelector(".error404page-header");
+      let navlist = document.querySelector(".navlist-item");
+
+      window.addEventListener("scroll", function () {
+        header.classList.toggle("sticky", window.scrollY > 80);
+        navlist.classList.toggle("middle", window.scrollY > 80);
+      });
+
+      let menu = document.querySelector("#menu-icon");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navlist.classList.toggle("open");
+      };
+
+      window.onscroll = () => {
+        menu.classList.remove("bx-x");
+        navlist.classList.remove("open");
+      };
+
+      let year = new Date().getFullYear();
+      document.querySelector(".year").innerText += year;
+
+      let logod = document.querySelectorAll(".logo-dark");
+      let logol = document.querySelectorAll(".logo-light");
+      let img404d = document.querySelector(".img404-dark");
+      let img404l = document.querySelector(".img404-light");
+
+      var checkbox = document.querySelector("input[name=theme]");
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          trans();
+          document.documentElement.setAttribute("data-theme", "dark");
+
+          for (var i = 0; i < logod.length; i++) {
+            logod[i].classList.toggle("logo-dark-hide");
+          }
+
+          for (var i = 0; i < logol.length; i++) {
+            logol[i].classList.toggle("logo-light-show");
+          }
+
+          img404d.classList.toggle("img404-dark-hide");
+          img404l.classList.toggle("img404-light-show");
+        } else {
+          trans();
+          document.documentElement.setAttribute("data-theme", "light");
+
+          for (var i = 0; i < logod.length; i++) {
+            logod[i].classList.toggle("logo-dark-hide");
+          }
+
+          for (var i = 0; i < logol.length; i++) {
+            logol[i].classList.toggle("logo-light-show");
+          }
+
+          img404d.classList.toggle("img404-dark-hide");
+          img404l.classList.toggle("img404-light-show");
+        }
+      });
+
+      let trans = () => {
+        document.documentElement.classList.add("transition");
+        window.setTimeout(() => {
+          document.documentElement.classList.remove("transition");
+        }, 300);
+      };
+    </script>
+  </body>
+</html>
