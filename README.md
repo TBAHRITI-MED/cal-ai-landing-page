@@ -60,8 +60,8 @@ Access the landing page here: [Demo Link](#)
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/yanisywd/calai.git
-   cd calai
+   https://github.com/TBAHRITI-MED/cal-ai-landing-page.git
+   cd cal-ai-landing-page
    ```
 
 2. **Install frontend dependencies:**
