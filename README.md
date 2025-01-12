@@ -1,5 +1,15 @@
 # CAL AI - Automatic Food Ingredient Detection 🍽️
-
+<p align="center">
+  <img src="image__1_-removebg-preview.png" alt="CAL AI Logo" width="200"/>
+</p>
+<!-- Alternative: Pour une bannière large -->
+<!-- ![CAL AI Banner](assets/banner.png) -->
+<!-- Alternative: Pour un logo avec un lien -->
+<!-- <p align="center">
+  <a href="https://calai-project.com">
+    <img src="assets/logo.png" alt="CAL AI Logo" width="200"/>
+  </a>
+</p> -->
 ## ✨ Description
 CAL AI is a project aimed at revolutionizing nutritional management through artificial intelligence. Our solution analyzes food images to automatically detect ingredients, estimate their weight, and calculate associated nutritional values.
 
